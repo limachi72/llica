@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Festividades - Llica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" id="btn-inicio">Volver al Mapa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="title-container">
+        <h1>Calendario de Festividades de Llica</h1>
+    </div>
+
+    <section id="calendar-section">
+        <h2>Festividades Anuales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mes</th>
+                    <th>Fecha</th>
+                    <th>Festividad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Enero</td>
+                    <td>6</td>
+                    <td>Reyes</td>
+                </tr>
+                <tr>
+                    <td>Febrero</td>
+                    <td>11-16</td>
+                    <td>Carnavales, Challa, y Koa a la Pachamama</td>
+                </tr>
+                <tr>
+                    <td>Marzo</td>
+                    <td>8</td>
+                    <td>Aniversario de la Escuela Bernabé Ledesma</td>
+                </tr>
+                <tr>
+                    <td>Marzo</td>
+                    <td>23</td>
+                    <td>Aniversario del Colegio Mixto Litoral</td>
+                </tr>
+                <tr>
+                    <td>Marzo</td>
+                    <td>24-30</td>
+                    <td>Semana Santa</td>
+                </tr>
+                <tr>
+                    <td>Junio</td>
+                    <td>6</td>
+                    <td>Aniversario de la ESFM Franz Tamayo</td>
+                </tr>
+                <tr>
+                    <td>Junio</td>
+                    <td>21</td>
+                    <td>Año Nuevo Aymara</td>
+                </tr>
+                <tr>
+                    <td>Julio</td>
+                    <td>22</td>
+                    <td>Virgen María Magdalena</td>
+                </tr>
+                <tr>
+                    <td>Julio</td>
+                    <td>25</td>
+                    <td>Santiago</td>
+                </tr>
+                <tr>
+                    <td>Agosto</td>
+                    <td>1</td>
+                    <td>Koa a la Pachamama</td>
+                </tr>
+                <tr>
+                    <td>Agosto</td>
+                    <td>16</td>
+                    <td>aniversario de uatf-llica</td>
+                </tr>
+                <tr>
+                    <td>Agosto</td>
+                    <td>18</td>
+                    <td>Aniversario de la Provincia Daniel Campos</td>
+                </tr>
+                <tr>
+                    <td>Octubre</td>
+                    <td>23</td>
+                    <td>Aniversario del CEA</td>
+                </tr>
+                <tr>
+                    <td>Octubre</td>
+                    <td>31</td>
+                    <td>Todos Santos Angelitos</td>
+                </tr>
+                <tr>
+                    <td>Noviembre</td>
+                    <td>1</td>
+                    <td>Todos Santos Alma Grande</td>
+                </tr>
+                <tr>
+                    <td>Noviembre</td>
+                    <td>2</td>
+                    <td>Despacho de Todos Santos</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Modal para mostrar más detalles de la festividad -->
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h3 id="event-title"></h3>
+            <p id="event-description"></p>
+        </div>
+    </div>
+
+</body>
+</html>

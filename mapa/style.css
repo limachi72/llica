@@ -1,0 +1,127 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-top: 60px; /* Deja espacio para el menú fijo */
+    color: #333;
+}
+
+/* Contenedor del mapa SVG */
+#svg-container {
+    margin: auto;
+    width: 100%;
+    height: 90vh; /* Ocupa el 90% del alto de la pantalla */
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+    background: white;
+}
+
+svg {
+    cursor: grab;
+    width: 100%;
+    height: 100%;
+}
+
+svg:active {
+    cursor: grabbing;
+}
+
+/* Estilo para las imágenes de las instituciones */
+.image-institution {
+    position: absolute; /* Posicionamiento relativo a la ventana */
+    z-index: 10; /* Aparecen sobre el mapa */
+    transition: transform 0.2s ease, top 0.2s ease, left 0.2s ease; /* Animaciones suaves */
+}
+
+/* Ajustes por defecto (desktop) */
+#institution1 {
+    top: 5%; /* Posición vertical relativa al contenedor */
+    left: 10%; /* Posición horizontal */
+    width: 10vw; /* Tamaño relativo al ancho de la pantalla */
+    height: auto;
+}
+
+#institution1 img,
+#institution2 img {
+    width: 100%;
+    height: auto; /* Mantener proporciones */
+    pointer-events: none; /* No interferir con interacciones del usuario */
+}
+
+#institution2 {
+    top: 5%; /* Posición vertical */
+    right: 10%; /* Posición horizontal */
+    width: 10vw; /* Tamaño relativo */
+    height: auto;
+}
+
+/* Responsividad para tablets */
+@media (max-width: 1024px) {
+    #institution1, #institution2 {
+        width: 15vw; /* Aumenta el tamaño para pantallas medianas */
+    }
+}
+
+/* Responsividad para celulares */
+@media (max-width: 768px) {
+    #institution1 {
+        top: 10%;
+        left: 5%; /* Ajustar posiciones */
+        width: 20vw; /* Más grande en pantallas pequeñas */
+    }
+
+    #institution2 {
+        top: 10%;
+        right: 5%; /* Ajustar posiciones */
+        width: 20vw;
+    }
+
+    h1 {
+        font-size: 1.2em; /* Reducir tamaño de texto */
+    }
+
+    #svg-container {
+        height: 70vh; /* Reducir el espacio del mapa */
+    }
+}
